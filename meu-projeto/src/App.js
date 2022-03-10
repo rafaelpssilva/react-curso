@@ -1,28 +1,16 @@
 import './App.css';
 
-import HelloWorld from './components/HelloWorld'
+import SayMyName from './components/SayMyName'
 
 
 function App() {
-
-  const name = 'Rafael'
-  const newName = name.toUpperCase()
-
-  function sum(a, b) {
-    return a + b
-  }
-
-  const url = 'https://via.placeholder.com/150'
-
+  const nome = "Rafael"
   return (
     <div className="App">
-      <h2>Alterando JSX</h2>
-      <p>Olá, {newName}</p>
-      <p>Soma: {sum(9, 10)}</p>
-      <HelloWorld />
-      <img src={url} alt="Minha Imagem" />
+      <SayMyName nome={nome.toLowerCase()} idade={5 + 11} profissão="Programador" />
     </div>
   );
 }
 
 export default App;
+
